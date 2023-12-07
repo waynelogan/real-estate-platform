@@ -104,7 +104,7 @@ export default function Navbar({ children }) {
                                 transition="all"
                                 transitionDuration="0.5s"
                             >
-                                Carl Nolan
+                                Muadh Abdulaziz
                             </Text>
                         </Link>
                     </Text>
