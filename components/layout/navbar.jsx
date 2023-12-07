@@ -70,7 +70,7 @@ export default function Navbar({ children }) {
                     <Flex alignItems='center'>
                         <Link href="/estate/add" passHref>
                             <Button mr={2} leftIcon={<AddIcon />} variant="outline" size="sm">
-                                Add Estate
+                                Add Property
                             </Button>
                         </Link>
                         <ThemeButton />
