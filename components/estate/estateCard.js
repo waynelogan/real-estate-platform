@@ -110,7 +110,7 @@ const EstateCard = ({ estate }) => {
                                 {estate.title}
                             </Heading>
                             <Text color="gray.500" fontWeight="bold">
-                                ${estate.price}{estate.status === "rent" && "/mo."}
+                                KSh {estate.price}{estate.status === "rent" && "/mo."}
                             </Text>
                             <Flex>
                                 {Array(5)
