@@ -6,6 +6,7 @@ import Navbar from "@/components/layout/navbar"
 import { Container, SimpleGrid } from "@chakra-ui/react"
 import { client } from "@/lib/mongodb/mongodbClient"
 import EstateCard from "@/components/estate/estateCard"
+import HeroSection from '../components/HeroSection'
 
 //Loading the estates data via Incremental Static Generation using getStaticProps() at the end of the file.
 
@@ -37,6 +38,7 @@ export default function Home({ estatesData }) {
         <title>RealEstate | Listings</title>
       </Head>
       <Navbar>
+        <HeroSection />
         <Container maxW="container.xl" w="full" centerContent>
           <SimpleGrid columns={[1, 2, 2, 3]} spacing="20px">
             {estatesData.map((estate) => (<EstateCard key={estate._id} estate={estate} />))}

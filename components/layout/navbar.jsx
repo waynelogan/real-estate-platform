@@ -18,7 +18,6 @@ import ThemeButton from "@/components/themeButton"
 
 const Links = [
     { key: "Listings", text: "Listings", href: "/" },
-    { key: "Reposirtory", text: "Repository", href: "https://github.com/cvrlnolan/real_estate" }
 ];
 
 const NavLink = ({ children, linkHoverColor, linkRef }) => (

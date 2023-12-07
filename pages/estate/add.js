@@ -139,7 +139,7 @@ export default function AddEstate() {
                                                 pointerEvents="none"
                                                 color="gray.300"
                                                 fontSize="1.2em"
-                                            >$</InputLeftElement>
+                                            >KSh</InputLeftElement>
                                             <Input
                                                 variant="flushed"
                                                 name="price"
@@ -186,7 +186,7 @@ export default function AddEstate() {
                                         {errors.address && <AlertPop title={errors.address.message} />}
                                     </FormControl>
                                     <FormControl>
-                                        <FormLabel>State/Province</FormLabel>
+                                        <FormLabel>County</FormLabel>
                                         <Input
                                             variant="flushed"
                                             name="state/province"
@@ -276,7 +276,7 @@ export default function AddEstate() {
                                                 color="gray.300"
                                                 fontSize="1.2em"
                                             >
-                                                sqft
+                                                sqm
                                             </InputRightElement>
                                         </InputGroup>
                                         {errors.surface_area && <AlertPop title={errors.surface_area.message} />}
@@ -313,7 +313,7 @@ export default function AddEstate() {
 
                                 {/* Page 4 */}
                                 {page === 4 && <>
-                                    <Heading>Appliances</Heading>
+                                    <Heading>Ammenities</Heading>
                                     <Stack spacing={4} direction={["column", "row"]}>
                                         <Checkbox name="cooling" {...register("cooling")}>Cooling</Checkbox>
                                         <Checkbox name="heating" {...register("heating")}>Heating</Checkbox>
@@ -381,7 +381,7 @@ export default function AddEstate() {
                                             <Input
                                                 variant="flushed"
                                                 name="telephone"
-                                                placeholder="ex: +237XXXXX..."
+                                                placeholder="ex: +254XXXXX..."
                                                 {...register("telephone", { required: 'Enter contact telephone number', pattern: { value: phonePattern, message: 'Invalid phone number format' } })}
                                             />
                                         </InputGroup>
