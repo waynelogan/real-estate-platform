@@ -1,4 +1,5 @@
 import React from "react"
+import Image from 'next/image'
 import {
     Box,
     Flex,
@@ -54,7 +55,9 @@ export default function Navbar({ children }) {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box>RealEstate</Box>
+                        <Box>
+                            <Image src='/royal-front-logo.png' height={50} width={200} />
+                        </Box>
                         <HStack
                             as='nav'
                             spacing={4}
